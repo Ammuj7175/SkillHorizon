@@ -1,0 +1,126 @@
+WhatWeb report for [1m[34mhttp://127.0.0.1:42001/[0m
+Status    : 302 Found
+Title     : [1m[33m<None>[0m
+IP        : 127.0.0.1
+Country   : [1m[31mRESERVED, ZZ[0m
+
+Summary   : [1mCookies[0m[[0m[22mPHPSESSID,security[0m], [1mHTTPServer[0m[[1m[36mnginx/1.26.3[0m], [1mHttpOnly[0m[[0m[22mPHPSESSID,security[0m], [1mnginx[0m[[1m[32m1.26.3[0m], [1mRedirectLocation[0m[[0m[22mlogin.php[0m]
+
+Detected Plugins:
+[ [1mCookies[0m ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : [1m[36msecurity[0m
+	String       : [1m[36mPHPSESSID[0m
+
+[ [1mHTTPServer[0m ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : [1m[36mnginx/1.26.3[0m (from server string)
+
+[ [1mHttpOnly[0m ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : [1m[36mPHPSESSID,security[0m
+
+[ [1mRedirectLocation[0m ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : [1m[36mlogin.php[0m (from location)
+
+[ [1mnginx[0m ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : [1m[32m1.26.3[0m
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 302 Found
+	Server: nginx/1.26.3
+	Date: Tue, 23 Sep 2025 13:08:49 GMT
+	Content-Type: text/html; charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: close
+	Set-Cookie: security=impossible; path=/; HttpOnly
+	Expires: Thu, 19 Nov 1981 08:52:00 GMT
+	Cache-Control: no-store, no-cache, must-revalidate
+	Pragma: no-cache
+	Set-Cookie: PHPSESSID=ca79c28e2bf2ad0a9b2f3157ce06c2f0; expires=Wed, 24 Sep 2025 13:08:49 GMT; Max-Age=86400; path=/; domain=127.0.0.1; HttpOnly; SameSite=Strict
+	Location: login.php
+	
+WhatWeb report for [1m[34mhttp://127.0.0.1:42001/login.php[0m
+Status    : 200 OK
+Title     : [1m[33mLogin :: Damn Vulnerable Web Application (DVWA)[0m
+IP        : 127.0.0.1
+Country   : [1m[31mRESERVED, ZZ[0m
+
+Summary   : [1mCookies[0m[[0m[22mPHPSESSID,security[0m], [1mDVWA[0m, [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mnginx/1.26.3[0m], [1mHttpOnly[0m[[0m[22mPHPSESSID,security[0m], [1mnginx[0m[[1m[32m1.26.3[0m], [1mPasswordField[0m[[0m[22mpassword[0m]
+
+Detected Plugins:
+[ [1mCookies[0m ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : [1m[36msecurity[0m
+	String       : [1m[36mPHPSESSID[0m
+
+[ [1mDVWA[0m ]
+	Damn Vulnerable Web App (DVWA) is a PHP/MySQL web 
+	application that is damn vulnerable. 
+
+	Google Dorks: (1)
+	Website     : http://www.dvwa.co.uk/
+
+[ [1mHTML5[0m ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ [1mHTTPServer[0m ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : [1m[36mnginx/1.26.3[0m (from server string)
+
+[ [1mHttpOnly[0m ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : [1m[36mPHPSESSID,security[0m
+
+[ [1mPasswordField[0m ]
+	find password fields 
+
+	String       : [1m[36mpassword[0m (from field name)
+
+[ [1mnginx[0m ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : [1m[32m1.26.3[0m
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Server: nginx/1.26.3
+	Date: Tue, 23 Sep 2025 13:08:52 GMT
+	Content-Type: text/html;charset=utf-8
+	Transfer-Encoding: chunked
+	Connection: close
+	Set-Cookie: security=impossible; path=/; HttpOnly
+	Pragma: no-cache
+	Set-Cookie: PHPSESSID=b3a975abc622e84e3bb5e88cb2185e41; expires=Wed, 24 Sep 2025 13:08:52 GMT; Max-Age=86400; path=/; domain=127.0.0.1; HttpOnly; SameSite=Strict
+	Cache-Control: no-cache, must-revalidate
+	Expires: Tue, 23 Jun 2009 12:00:00 GMT
+	Content-Encoding: gzip
+	
